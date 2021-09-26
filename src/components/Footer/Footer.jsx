@@ -1,4 +1,4 @@
-import { FaGithub, FaGoogle } from "react-icons/fa";
+import { FaGithub, FaGoogle, FaLinkedin} from "react-icons/fa";
 function Footer({ links }) {
   return (
     <div className="footer">
@@ -9,6 +9,10 @@ function Footer({ links }) {
         }}
       >
         <FaGoogle />
+      </li>
+
+      <li onClick={() => window.open(links.link_page, 'blank')}>
+        <FaLinkedin />
       </li>
       <li onClick={() => window.open(links.github_page, "blank")}>
         <FaGithub />
